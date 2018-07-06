@@ -1,0 +1,6 @@
+<button type="button" *ngIf="!isLink()" class="button">
+  {{text}}
+</button>
+<a *ngIf="isLink()" [routerLink]="link" class="button">
+  {{text}}
+</a>

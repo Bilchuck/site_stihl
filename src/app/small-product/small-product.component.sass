@@ -1,0 +1,53 @@
+@import "../variables.sass"
+  
+.container
+  position: relative
+  width: 300px
+  max-width: 100%
+  border: 1px solid rgba(0,0,0,0)
+  border-radius: 10px
+  padding: 10px
+  &:hover
+    border-color: #ccc
+  .img
+    margin-bottom: 10px
+    height: 250px
+    display: block
+  .title
+    position: relative
+    font-weight: 700
+    text-decoration: none
+    color: #555
+    font-size: 18px
+    display: block
+    padding-bottom: 20px
+    margin-bottom: 20px
+    &:after
+      content: ""
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 45px
+      height: 3px
+      background: $orange-stihl
+    &:hover
+      text-decoration: underline
+      color: #000
+  .description
+      font-size: 16px
+      color: #333
+      margin-bottom: 15px
+  .price-block
+    font-weight: 700
+    font-size: 18px
+    &:after
+      content: ""
+      display: table
+      clear: both
+    &.saled
+      .price
+        text-decoration: line-through
+        float: left
+      .sale-price
+        float: right
+        color: $orange-stihl

@@ -1,0 +1,15 @@
+<div class="container">
+  <a class="img" [routerLink]="link">
+    <img [src]="product.image" alt="">
+  </a>
+  <a class="title" [routerLink]="link">
+    {{product.name}}
+  </a>
+  <p class="description">
+    {{product.description}}
+  </p>
+  <div class="price-block" [ngClass]="{'saled': product.salePrice}">
+    <div class="price">{{product.price}} грн.</div>
+    <div class="sale-price" *ngIf="product.salePrice">{{product.salePrice}} грн!</div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="slide-container">
+  <div
+    class="slide"
+    [ngStyle]="{'background-image': 'url(' + currentImage + ')'}">
+  </div>
+  <div class="arrow left" (click)="left()">
+      <i class="fas fa-arrow-left"></i>
+  </div>
+  <div class="arrow right" (click)="right()">
+      <i class="fas fa-arrow-right"></i>
+  </div>
+</div>
